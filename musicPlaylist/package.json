@@ -1,0 +1,21 @@
+{
+  "name": "musicplaylist",
+  "version": "1.0.0",
+  "description": "express application with node and mongoDB",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.5",
+    "mysql": "^2.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine spec/playlist.spec.js"
+  },
+  "author": "Dimpho Ramodise",
+  "license": "ISC"
+}
