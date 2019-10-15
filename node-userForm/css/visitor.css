@@ -1,0 +1,24 @@
+* {
+  margin: 30px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-size: medium;
+}
+
+body
+{
+	background:#BAD7D4;
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-size:small;
+	margin:8px 0 16px;
+	text-align:center;
+}
+
+.form-group{
+	text-align: left;
+}
+
+input{
+	color: black; 
+}

@@ -1,0 +1,22 @@
+{
+  "name": "challenge1",
+  "version": "1.0.0",
+  "description": "visitor.js class spec ",
+  "main": "visitor.js",
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  },
+  "scripts": {
+    "test": "jasmine spec/visitor.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TauRamodise/node-challenges.git"
+  },
+  "author": "Dimpho Ramodise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TauRamodise/node-challenges/issues"
+  },
+  "homepage": "https://github.com/TauRamodise/node-challenges#readme"
+}
