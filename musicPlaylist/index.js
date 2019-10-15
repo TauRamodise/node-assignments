@@ -1,7 +1,6 @@
-
 const express = require('express');
-let bodyParser = require('body-parser');
-const apiRoutes = require('./api/api-routes')
+// let bodyParser = require('body-parser');
+const router = require('./api/api-routes')
 const MongoClient = require('mongodb').MongoClient;
 const cors = require('cors')
 let url = "mongodb://localhost:27017/playlist";
@@ -31,20 +30,13 @@ MongoClient.connect(url, {
     };
   });
 
-
-app.use(cors)
-
 //Create application
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-app.use(bodyParser.json())
+app.use(express.urlencoded({extended: false}));
+app.use(express.json())
 
 //state the path that express will follow to
-app.use(express.static('.'));
-app.use('/api', apiRoutes)
- 
-
+app.use(express.static('public'));
+app.use(router)
 
 app.listen(3009, () => {
     let host = "http://127.0.0.1:3009"
